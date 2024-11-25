@@ -1,0 +1,24 @@
+body{
+font-family: 'Courier New', Courier, monospace;
+}
+
+#parrafoInicial{
+    background-color: gray;
+
+}
+
+.especial {
+    color: blue;
+}
+
+.bordesTitulos {
+    border: solid 1px orange;
+}
+
+ul ul {
+    color: green;
+}
+
+ul {
+    color: red;
+}
