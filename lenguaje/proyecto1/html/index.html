@@ -12,10 +12,14 @@
     </div>
     
     <h1 id="fullName">
-        Ignacio Lopez
+        Ignacio López
     </h1>
     <center>
         <button id="changeNameButton">Cambiar nombre</button>
+    </center>
+
+    <center>
+        <button id="mostrar">Mostrar o ocultar</button>
     </center>
     <h3> Desarrollo de aplicaciones web </h3>
 
@@ -35,7 +39,20 @@
         <a href="https://www.portfolio.com/" target="_blank">Portfolio</a>
     </div>
 
-    <button type="button" id="boton" > Show Form </button>
+
+    <div id="contactForm0" class="contact-form">
+        <!-- <Label> -->
+        <!-- <Input> -->
+        <label>Nombre Completo</label>
+        <input type="text" id="name" name="name" required>
+        <label>Teléfono</label>
+        <input type="number" id="phone" name="phone" required>
+        <label>Email</label>
+        <input type="email" id="email" name="email" required>
+        <label>Mensaje</label>
+        <textarea name=""message id="message"></textarea>
+    </div>
+
 
     <script src="../js/java.js"></script>
 </body>

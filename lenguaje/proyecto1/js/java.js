@@ -16,13 +16,30 @@ profileImage.addEventListener('mouseout', () => {
 var chageNameColorButton = document.getElementById('changeNameButton');
 
 var fullNameH1 = document.getElementById('fullName');
+const Name = fullNameH1.textContent;
 
 chageNameColorButton.addEventListener('click',() => {
     console.warn("click ------------");
     alert("los tralaleritos dicen: tralalá!");
     if(fullNameH1.style.color === ""){
-        fullNameH1.style = "color: black; font-style: italic;";
-    } else {fullNameH1.style = "";}
+        fullNameH1.style = "color: orange; font-style: italic;";
+        fullNameH1.innerHTML = "1º DAW";
+    } else {
+        fullNameH1.style = "";
+        fullNameH1.innerHTML = Name;
+    }
+});
+
+
+mostrar.addEventListener('click',() => {
+    console.warn("click-------");
+    alert("bombardiro crocodilo");
+
+    if(fullNameH1.style.display === "none"){
+        fullNameH1.style.display = "block";
+    } else{
+        fullNameH1.style.display = "none";
+    }
 });
 
 const profileColorName = document.getElementById('boton');
