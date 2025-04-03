@@ -20,7 +20,9 @@ var fullNameH1 = document.getElementById('fullName');
 chageNameColorButton.addEventListener('click',() => {
     console.warn("click ------------");
     alert("los tralaleritos dicen: tralalá!");
-    fullNameH1.style = "color: black; font-style: italic;";
+    if(fullNameH1.style.color === ""){
+        fullNameH1.style = "color: black; font-style: italic;";
+    } else {fullNameH1.style = "";}
 });
 
 const profileColorName = document.getElementById('boton');
