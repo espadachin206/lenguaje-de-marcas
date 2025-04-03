@@ -24,13 +24,3 @@ chageNameColorButton.addEventListener('click',() => {
 });
 
 const profileColorName = document.getElementById('boton');
-
-/* profileColorName.addEventListener('click', () => {
-    const titleName = document.getElementById('fullName')
-    if(profileColorName.style.color == 'red'){
-        profileColorName.style.color = 'blue';
-    } else {
-        profileColorName.style.color = 'red';
-    }
-
-}); */
