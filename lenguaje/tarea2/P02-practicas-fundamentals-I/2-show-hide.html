@@ -5,9 +5,14 @@
   const div = document.getElementById("myDiv");
 
   button.addEventListener("click", function () {
+    if(div.style.display === "none"){
+      div.style.display = "block";
+    } else{
       div.style.display = "none";
+    }
   });
 
   // TODO: Create a second button that shows the div again when clicked. the style to apply is div.style.display = "block";
+
 
 </script>
