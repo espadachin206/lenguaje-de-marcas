@@ -13,4 +13,21 @@
   //TODO: Add a second button that changes the text
   // back to "Initial Text" when clicked.
 
+
+</script>
+
+
+
+<button id="textoOriginal">Texto Original</button>
+
+
+<script>
+  const originalText = myParagraph.textContent;
+
+  const resetButton = document.getElementById("textoOriginal");
+  textoOriginal.addEventListener("click", function () {
+    paragraph.textContent = originalText;
+  })
+
+
 </script>
