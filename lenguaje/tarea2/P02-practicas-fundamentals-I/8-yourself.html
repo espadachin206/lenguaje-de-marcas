@@ -28,15 +28,55 @@
 <body>
 
   <h1>First Javascript contact</h1>
-  <p>This is the initial text.</p>
+  <p id="text">This is the initial text.</p>
 
-  <button>Hello World</button>
-  <button>Goodbye World</button>
-  <button>Bold</button>
-  <button>Italic</button>
-  <button>Change Color</button>
+  <button id="hw">Hello World</button>
+  <button id="gw">Goodbye World</button>
+  <button id="cambioBold">Bold</button>
+  <button id="cambioItalica">Italic</button>
+  <button id="cambioColor">Change Color</button>
 
   <script>
+    const paragraph = document.getElementById('text');
+
+    // Cambia el texto a "Hello World"
+    document.getElementById('hw').addEventListener('click', () => {
+      paragraph.textContent = "Hello World";
+    });
+
+    // Cambia el texto a "Goodbye World"
+    document.getElementById('gw').addEventListener('click', () => {
+      paragraph.textContent = "Goodbye World";
+    });
+
+    // Cambia entre negrita y normal
+    document.getElementById('cambioBold').addEventListener('click', () => {
+      if (paragraph.style.fontWeight === 'bold') {
+        paragraph.style.fontWeight = 'normal';
+      } else {
+        paragraph.style.fontWeight = 'bold';
+      }
+    });
+
+    // Cambia entre itálica y normal
+    document.getElementById('cambioItalica').addEventListener('click', () => {
+      if (paragraph.style.fontStyle === 'italic') {
+        paragraph.style.fontStyle = 'normal';
+      } else {
+        paragraph.style.fontStyle = 'italic';
+      }
+    });
+
+    // Alterna el color entre rojo y negro
+    document.getElementById('cambioColor').addEventListener('click', () => {
+      if (paragraph.style.color === 'red') {
+        paragraph.style.color = 'black';
+      } else {
+        paragraph.style.color = 'red';
+      }
+    });
+
+
       // A button that, when clicked, changes the text of the paragraph <p> to "Hello World".
       // A button that, when clicked, changes the text of the paragraph < p > to "Goodbye World".
       // A button that, when clicked, change the text style to bold.
@@ -48,3 +88,4 @@
 </body>
 
 </html>
+
