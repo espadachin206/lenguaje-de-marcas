@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline text-clifford">
+      Hello world!
+    </h1>
+
+    <!--Aquí ponemos que haya una sola columna por defecto, si es sm que haya 2, si es md que haya 3 y si es lg que haga 4-->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+        <!--ponemos el fondo en azul, que el padding sea de 4rem (16px), bordes redondeados extragrandes y que tengan sombra-->
+        <div class="bg-blue-100 p-4 rounded-xl shadow">prueba 1</div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">prueba 2</div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">prueba 3</div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">prueba 4</div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">prueba 5</div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">prueba 6</div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">prueba 7</div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">prueba 8</div>
+    </div>
+
+  </body>
+</html>

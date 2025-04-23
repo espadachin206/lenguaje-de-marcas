@@ -12,6 +12,15 @@
   <button onclick="mostrarMensaje()">Mostrar Mensaje</button>
   <p id="mensaje"></p>
   <script>
+    // Función que muestra un mensaje de alerta y agrega el mismo mensaje al <p> tag
+    function mostrarMensaje() {
+      // Muestra el mensaje en una alerta
+      alert("Hola Mundo");
+
+      // Agrega el mismo mensaje al <p> con id="mensaje"
+      const mensajeElement = document.getElementById("mensaje");
+      mensajeElement.textContent = "Hola Mundo";
+    }
     //TODO: create a function mostrarMensaje that shows an alert with "Hola Mundo" and also adds the same message to the <p> tag with id="mensaje"
   </script>
 </body>
